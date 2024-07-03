@@ -1,0 +1,89 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+canvas {
+    border: 1px solid black;
+    overflow: scroll;
+    width: 90vw;
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vw;
+    height: 40vh;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+
+}
+
+.green {
+    background-color: green;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+.blue {
+    background-color: #0022ff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+
+}
+
+.white {
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    width: 55px;
+    height: 55px;
+}
+
+.checkRadius {
+    position: absolute;
+    left: 90%;
+    user-select: none;
+}
+
+source {
+    width: 100px;
+}
+
+.audio_control {
+    width: 100px;
+    position: absolute;
+    bottom: 700px;
+    left: 100px;
+}
+#inputColor {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.info {
+    position: absolute;
+    bottom: 90%;
+
+}
