@@ -13,7 +13,7 @@ const checkRadius = document.getElementById("checkRadius");
 const download = document.getElementById("download");
 const inputColor = document.getElementById("inputColor");
 
-let color
+let color = 'red'
 let paintControl = false;
 
 function drawBG () {
@@ -60,7 +60,7 @@ window.addEventListener('wheel', (event) => {
     event.preventDefault();
 }, {passive: false})
 canvas.addEventListener('mousedown', () => {paintControl = true;})
-canvas.addEventListener('mouseup', () => {paintControl = false;})
+document.addEventListener('mouseup', () => {paintControl = false;})
 canvas.addEventListener("mousemove", (event)  => {
     x = event.clientX;
     y = event.clientY;
@@ -84,3 +84,4 @@ drawBG();
 setInterval(draw, 10);
 setInterval(checkRadiusFunc, 30);
 
+// фоновая музыка : checkbox, громкость;
