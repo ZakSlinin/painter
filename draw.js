@@ -1,7 +1,7 @@
 let canvas = document.getElementById("widgetDrawer");
 let ctx = canvas.getContext("2d");
-let x = 0;
-let y = 0;
+let x = 250;
+let y = 250;
 let radius = 20;
 
 // import all
@@ -13,7 +13,7 @@ const checkRadius = document.getElementById("checkRadius");
 const download = document.getElementById("download");
 const inputColor = document.getElementById("inputColor");
 
-let color = 'red'
+let color
 let paintControl = false;
 
 function drawBG () {
@@ -84,4 +84,3 @@ drawBG();
 setInterval(draw, 10);
 setInterval(checkRadiusFunc, 30);
 
-// фоновая музыка : checkbox, громкость;
